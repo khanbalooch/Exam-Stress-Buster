@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="showEnglish">true</bool>
+    <bool name="showArabic">true</bool>
+    <bool name="showReference">true</bool>
+</resources>

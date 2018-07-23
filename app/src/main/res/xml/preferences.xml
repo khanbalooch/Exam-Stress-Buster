@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <PreferenceCategory android:title="Select Languages">
+       <CheckBoxPreference
+           android:key="@string/pref_language_key_arabic"
+           android:summaryOff="Disabled"
+           android:summaryOn="Enabled"
+           android:title="Arabic"
+           android:defaultValue="true">
+       </CheckBoxPreference>
+       <CheckBoxPreference
+           android:key="@string/pref_language_key_english"
+           android:summaryOff="Disabled"
+           android:summaryOn="Enabled"
+           android:title="English"
+           android:defaultValue="true">
+       </CheckBoxPreference>
+    </PreferenceCategory>
+<PreferenceCategory android:title="Reference">
+        <CheckBoxPreference
+            android:key="@string/pref_references_key_reference"
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
+            android:title="Show Reference"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+</PreferenceCategory>
+    <PreferenceCategory android:title="Font and Color">
+        <ListPreference
+            android:defaultValue="@string/pref_color_red_value"
+            android:entries="@array/pref_color_option_labels"
+            android:entryValues="@array/pref_color_option_values"
+            android:key="@string/pref_color_key"
+            android:title="Font Color" />
+        <ListPreference
+            android:defaultValue="@string/pref_size_normal_value"
+            android:entries="@array/pref_size_option_labels"
+            android:entryValues="@array/pref_size_option_values"
+            android:key="@string/pref_size_key"
+            android:title="Font Size" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
